@@ -1,0 +1,57 @@
+#wrapper {
+    display: grid;
+    gap: 1%;
+    height: 750px;
+    grid-template-columns: 17% 1fr 17%;
+    grid-template-rows: 22% 1fr 17%;
+    grid-template-areas:
+        'na hd hd hd'
+        'as ma ma ma'
+        'ft ft ft ft'
+    ;
+}
+
+header {
+    grid-area: hd;
+    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
+    padding: 0.4cm;
+    border-radius: 20px;
+    width: 1200px;
+}
+
+@media screen {
+    
+}
+
+nav {
+    grid-area: na;
+    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
+    padding: 0.4cm;
+    border-radius: 20px;
+    width: 1200px;
+}
+
+aside {
+    grid-area: as;
+    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
+    padding: 0.4cm;
+    border-radius: 20px;
+    width: 1200px;
+}
+
+
+main {
+    grid-area: ma;
+    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
+    padding: 0.4cm;
+    border-radius: 20px;
+    width: 1200px;
+}
+
+footer {
+    grid-area: ft;
+    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
+    padding: 0.4cm;
+    border-radius: 20px;
+    width: 1200px;
+}
