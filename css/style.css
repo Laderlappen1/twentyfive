@@ -1,57 +1,166 @@
-#wrapper {
-    display: grid;
-    gap: 1%;
-    height: 750px;
-    grid-template-columns: 17% 1fr 17%;
-    grid-template-rows: 22% 1fr 17%;
-    grid-template-areas:
-        'na hd hd hd'
-        'as ma ma ma'
-        'ft ft ft ft'
-    ;
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  .roundedcorners{
+    border-radius: 15px 30px 15px 30px;
+
+  }
+
+  #planesize {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hamburger {
+    float: left;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .title {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .profile {
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .profile-name {
+    float: left;
+    width: 30%;
+  }
+
+  .profile-image {
+    float: right;
+    width: 66.67%;
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sample-text {
+    clear: both;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1000;
+    width: 40px;
+    height: 30px; /* Adjusted to properly fit the bars */
+    padding: 5px;
 }
 
-header {
-    grid-area: hd;
-    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
-    padding: 0.4cm;
-    border-radius: 20px;
-    width: 1200px;
+/* Make sure all three bars are visible */
+.hamburger .bar {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-@media screen {
-    
+/* Transform to an 'X' */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
 }
 
-nav {
-    grid-area: na;
-    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
-    padding: 0.4cm;
-    border-radius: 20px;
-    width: 1200px;
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
 }
 
-aside {
-    grid-area: as;
-    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
-    padding: 0.4cm;
-    border-radius: 20px;
-    width: 1200px;
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 
-main {
-    grid-area: ma;
-    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
-    padding: 0.4cm;
-    border-radius: 20px;
-    width: 1200px;
+/* Hide the navigation menu off-screen initially */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: left;
+    padding-top: 60px;
+    transition: left 0.4s ease-in-out;
 }
 
-footer {
-    grid-area: ft;
-    background-image: linear-gradient(-90deg, #f0d689, #c0392b);
-    padding: 0.4cm;
-    border-radius: 20px;
-    width: 1200px;
+/* Show menu by sliding in from the left */
+.nav-menu.active {
+    left: 0;
+}
+
+/* Close menu when clicking anywhere outside */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+/* Show overlay when menu is active */
+.overlay.active {
+    display: block;
+}
+
+/* Adjust hamburger animation */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
 }

@@ -7,33 +7,59 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="js/javascript.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" sizes="16x16" href="img/plane_startsida.png" type="image/png">
 </head>
 
 <body>
-  <div id="wrapper">
+  <header>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="title">Flygdykdoktor</div>
+  </header>
 
-    <header>
-      <p>hejsan svejsan</p>
-    </header>
-    <nav>
+  <!-- Add the navigation menu and overlay here -->
+  <nav class="nav-menu" role="navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    </nav>
+  <div class="overlay"></div>
 
-    <aside>
-
-    </aside>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-
-    </footer>
-
+  <div class="content">
+    <div class="profile">
+      <div class="profile-name">
+        <h1>David Merrick</h1>
+      </div>
+      <div class="profile-image">
+        <img class="roundedcorners" id="planesize" src="img/plane_startsida.png" alt="Plane">
+      </div>
+    </div>
+    <div class="sample-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum.</p>
+      <p>Praesent euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum.</p>
+    </div>
   </div>
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
 
+  <script src="js/javascript.js"></script>
 </body>
 
 </html>
