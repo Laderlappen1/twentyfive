@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Flygdykdoktor</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/javascript.js">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" sizes="16x16" href="img/plane_startsida.png" type="image/png">
 </head>
 
@@ -20,44 +19,73 @@
       <span class="bar"></span>
       <span class="bar"></span>
     </button>
-    <div class="title">Flygdykdoktor</div>
+    <h1 class="title">Flygdykdoktor</h1>
   </header>
 
-  <!-- Add the navigation menu and overlay here -->
-  <nav class="nav-menu" role="navigation">
+  <nav class="nav-menu">
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hitta_hit.html">Hitta hit</a></li>
+      <li><a href="fragor.html">Frågor</a></li>
+      <li><a href="priser.html">Priser - Om mig</a></li>
+  </ul>
   </nav>
+
 
   <div class="overlay"></div>
 
-  <div class="content">
-    <div class="profile">
-      <div class="profile-name">
-        <h1>David Merrick</h1>
-      </div>
-      <div class="profile-image">
-        <img class="roundedcorners" id="planesize" src="img/plane_startsida.png" alt="Plane">
-      </div>
+  <main class="content">
+    <section class="profile">
+      <h1>David Merrick</h1>
+      <img class="roundedcorners" id="planesize" src="img/plane_startsida.png" alt="Plane">
+    </section>
+
+    <section class="sample-text">
+      <p><b>Vad är ett flygbesök?</b></p>
+      <p>Ett flygbesök innebär att du som pilot ska valideras, det betyder att för att du ska få lov att kunna flyga
+        måste du nå vissa krav. För att testa och se om du når dessa krav kommer du att träffas av en tränad läkare som
+        kommer att testa dig.</p>
+
+      <p><b>Allmän info</b></p>
+      <p> Hos oss kan du göra undersökning för:</p>
+      <ul>
+        <li>Flyg( klass 1,2, LAPL, Kabin).</li>
+        <li>Dyk.</li>
+        <li>Lastbil/ Buss/ Taxi.</li>
+        <li>Sjöfart.</li>
+        <li>Järnväg; AGS/ TSD drift, Lokförare. </li>
+        <li>Fallskärm.</li>
+
+
+      </ul>
+
+      <p><b>Att ha med till besöket:</b></p>
+      <div class="ta_med">
+      <ul>
+        <li>-Giltig Fotolegitimation+ Ifylld Hälsodeklaration för respektive undersökningskategori.</li>
+        <li>-För piloter; gärna kopia av tidigare mediciniskt intyg och flygdagbok.</li>
+        <li>-Optiker recept om du bär glasögon/linser. Gäller samtliga yrkeskategorier( se allmän info). Får inte vara
+          äldre än 2 år gammalt. För klass 1 piloter ska det framgå på optiker receptet utöver uppgifter om synskärpa
+          även- Sfär,cylinder, Axel och Nära( Add).</li>
+        <li>-Ta med linser el glasögon ifall du har några.</li>
+        <li>-Läkemedelslista, ifall du står på läkemedel.</li>
+        <li>-Journalunderlag, ifall du haft vårdkontakter/ varit inneliggande.</li>
+      </ul>
     </div>
-    <div class="sample-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum.</p>
-      <p>Praesent euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt urna, nec tincidunt nunc nunc id ipsum.</p>
-    </div>
-  </div>
+    </section>
+  </main>
+
   <footer>
+    <p>Länk till sociala medier</p>
     <div class="social-links">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i class="fab fa-facebook">Facebook</i> </a>
+      <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter / X</i></a>
+      <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
+      <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
     </div>
+    <p>Copyright © All Rights Reserved</p>
   </footer>
+
 
   <script src="js/javascript.js"></script>
 </body>
