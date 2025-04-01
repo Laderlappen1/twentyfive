@@ -2,11 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hitta hit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="img/plane_startsida.png" type="image/png">
 </head>
 <body>
-    <h1>Hitta hit</h1>
+    <div id="wrapper">
+        <header>
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <h1 class="title">Hitta hit</h1>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="hitta_hit.html">Hitta hit</a></li>
+                <li><a href="fragor.html">Frågor</a></li>
+                <li><a href="priser.html">Priser - Om mig</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay"></div>
+
+        <main>
+            <h1>Hitta hit</h1>
+            <img class="roundedcorners" id="adress" src="img/adress.jpg" alt="adress">
+            <p><b>Adress: Lekevallsgatan 60</b></p>
+            <p>Flygundersökningen utförs i min villa.</p>
+            <p><b>Obs</b> Det finns <b>Inte</b> väntrum.</p>
+            <p><b>Obs</b> Det kostar att parkera utanför.</p>
+            <p><b>Ni Är Varmt Välkomna</b></p>
+        </main>
+
+        <footer>
+            <p>Länk till sociala medier</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i class="fab fa-facebook">Facebook</i></a>
+                <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter / X</i></a>
+                <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
+                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+            </div>
+            <p>Copyright © All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="js/javascript.js"></script>
 </body>
 </html>
