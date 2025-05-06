@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" sizes="16x16" href="img/plane_startsida.png" type="image/png">
 </head>
+
 <body>
-    <div id="wrapper">
+    <div id="wrapper-hitta">
         <header>
             <button class="hamburger" aria-label="Menu" aria-expanded="false">
                 <span class="bar"></span>
@@ -21,13 +23,32 @@
             <h1 class="title">Hitta hit</h1>
         </header>
 
+        <nav class="nav-desktop">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="hitta_hit.html">Hitta hit - Kontakta mig</a></li>
+                <li><a href="fragor.html">Frågor - Länkar</a></li>
+                <li><a href="priser.html">Priser - Om mig</a></li>
+            </ul>
+            <!-- Place in header or navbar -->
+            <form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search..." />
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+
+        </nav>
+
+
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Hem</a></li>
-                <li><a href="hitta_hit.html">Hitta hit</a></li>
-                <li><a href="fragor.html">Frågor</a></li>
+                <li><a href="hitta_hit.html">Hitta hit - Kontakta mig</a></li>
+                <li><a href="fragor.html">Frågor - Länkar</a></li>
                 <li><a href="priser.html">Priser - Om mig</a></li>
             </ul>
+            <form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search..." />
+                <button type="submit" class="search-button">🔍</button>
         </nav>
 
         <div class="overlay"></div>
@@ -37,23 +58,36 @@
             <img class="roundedcorners" id="adress" src="img/adress.jpg" alt="adress">
             <p><b>Adress: Lekevallsgatan 60</b></p>
             <p>Flygundersökningen utförs i min villa.</p>
-            <p><b>Obs</b> Det finns <b>Inte</b> väntrum.</p>
-            <p><b>Obs</b> Det kostar att parkera utanför.</p>
-            <p><b>Ni Är Varmt Välkomna</b></p>
+            <p><b>Obs:</b> Det finns <b>Inte</b> väntrum.</p>
+            <p><b>Obs:</b> Det kostar att parkera utanför.</p>
+            <p><b>Ni är varmt välkomna</b></p>
+
+            <h2>Kontakta Mig </h2>
+            <p>Telefon: 073 941 23 45</p>
+            <p>Mail: ame@flygdykdoktor.se</p>
+            <img class="stetoskop" src="img/stetoskop.jpg" alt="stetoskop">
+
         </main>
 
-        <footer>
-            <p>Länk till sociala medier</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i class="fab fa-facebook">Facebook</i></a>
-                <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter / X</i></a>
-                <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
-                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
-            </div>
-            <p>Copyright © All Rights Reserved</p>
-        </footer>
+
+        <div class="hitta_hit_footer">
+            <footer>
+                <p>Länk till sociala medier</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i
+                            class="fab fa-facebook">Facebook</i></a>
+                    <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter /
+                            X</i></a>
+                    <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
+                    <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i
+                            class="fab fa-linkedin">LinkedIn</i></a>
+                </div>
+                <p>Copyright © All Rights Reserved</p>
+            </footer>
+        </div>
     </div>
 
     <script src="js/javascript.js"></script>
 </body>
+
 </html>

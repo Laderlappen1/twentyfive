@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <div id="wrapper-fragor">
         <header>
             <button class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -24,77 +24,136 @@
             <h1 class="title">Flygdykdoktor</h1>
         </header>
 
-        <nav class="nav-menu">
+        <nav class="nav-desktop">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hitta_hit.html">Hitta hit</a></li>
-                <li><a href="fragor.html">Frågor</a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="hitta_hit.html">Hitta hit - Kontakta mig</a></li>
+                <li><a href="fragor.html">Frågor - Länkar</a></li>
                 <li><a href="priser.html">Priser - Om mig</a></li>
             </ul>
+            <form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search..." />
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </nav>
+
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="hitta_hit.html">Hitta hit - Kontakta mig</a></li>
+                <li><a href="fragor.html">Frågor - Länkar</a></li>
+                <li><a href="priser.html">Priser - Om mig</a></li>
+            </ul>
+            <!-- Place in header or navbar -->
+            <form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search..." />
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+
         </nav>
 
         <main class="qna-section">
 
             <h1>Frågor </h1>
-            <section class="qna">
-                <h2>Hur lång tid tar en flygmedicinsk undersökning?</h2>
-                <p>- ca 40-50 min för förnyelse, första gångs undersökning PPL och komplett undersökning( inkl prover/
-                    EKG/ audiometri) som är mer omfattande, tar längre tid. </p>
-            </section>
+            <div class="qna-container">
+                <section class="qna">
+                    <h2>Hur lång tid tar en flygmedicinsk undersökning?</h2>
+                    <p>- ca 40-50 min för förnyelse, första gångs undersökning PPL och komplett undersökning( inkl
+                        prover/
+                        EKG/ audiometri) som är mer omfattande, tar längre tid. </p>
+                </section>
 
-            <section class="qna">
-                <h2>Vad är giltighet av de medicinska intygen?</h2>
-                <p>1. Medicinska intyg klass 1 ska vara giltiga för en period av 12 månader.
+                <section class="qna">
+                    <h2>Vad är giltighet av de medicinska intygen?</h2>
+                    <p>1. Medicinska intyg klass 1 ska vara giltiga för en period av 12 månader.
 
-                    2. Giltighetsperioden för medicinska intyg klass 1 ska förkortas till 6 månader för certifikatinnehavare som:
-                    
-                    i) arbetar i kommersiell lufttransport i enpilotsystem som omfattar transport av passagerare och har fyllt 40 år,
-                    
-                    ii) har fyllt 60 år.
-                    
-                    
-                    
-                    3. Medicinska intyg klass 2 ska vara giltiga för en period av:
-                    
-                    i) 60 månader tills certifikatinnehavaren fyller 40 år; ett medicinskt intyg som utfärdats innan innehavaren fyllt
-                    
-                    40 år ska upphöra att gälla när denne fyller 42 år,
-                    
-                    ii) 24 månader om certifikatinnehavaren är mellan 40 och 50 år; ett medicinskt intyg som utfärdats innan
-                    
-                    innehavaren fyllt 50 år ska upphöra att gälla när denne fyller 51 år,
-                    
-                    iii) 12 månader om certifikatinnehavaren har fyllt 50 år.</p>
-            </section>
+                        2. Giltighetsperioden för medicinska intyg klass 1 ska förkortas till 6 månader för
+                        certifikatinnehavare som:
 
-            <section class="qna">
-                <h2>Vilka är synkraven?</h2>
-                <p>För synskärpa på avstånd, med eller utan korrigering, gäller följande:
+                        i) arbetar i kommersiell lufttransport i enpilotsystem som omfattar transport av passagerare och
+                        har
+                        fyllt 40 år,
 
-                    1. För medicinskt intyg klass 1 ska synskärpan vara 6/9 (0,7) eller bättre för vardera ögat och synskärpan med båda
-                    
-                    ögonen ska vara 6/6 (1,0) eller bättre.
-                    
-                    2. För medicinskt intyg klass 2 ska synskärpan vara 6/12 (0,5) eller bättre för vardera ögat och synskärpan med båda
-                    
-                    ögonen ska vara 6/9 (0,7) eller bättre. Sökande med nedsatt syn på ett öga kan bedömas som lämplig i samråd med
-                    
-                    den certifikatutfärdande myndigheten, efter tillfredsställande oftalmologisk bedömning:
-                    
+                        ii) har fyllt 60 år.
+
+
+
+                        3. Medicinska intyg klass 2 ska vara giltiga för en period av:
+
+                        i) 60 månader tills certifikatinnehavaren fyller 40 år; ett medicinskt intyg som utfärdats innan
+                        innehavaren fyllt
+
+                        40 år ska upphöra att gälla när denne fyller 42 år,
+
+                        ii) 24 månader om certifikatinnehavaren är mellan 40 och 50 år; ett medicinskt intyg som
+                        utfärdats
+                        innan
+
+                        innehavaren fyllt 50 år ska upphöra att gälla när denne fyller 51 år,
+
+                        iii) 12 månader om certifikatinnehavaren har fyllt 50 år.</p>
+                </section>
+
+                <section class="qna">
+                    <h2>Vilka är synkraven?</h2>
+                    <p>För synskärpa på avstånd, med eller utan korrigering, gäller följande:
+
+                        1. För medicinskt intyg klass 1 ska synskärpan vara 6/9 (0,7) eller bättre för vardera ögat och
+                        synskärpan med båda
+
+                        ögonen ska vara 6/6 (1,0) eller bättre.
+
+                        2. För medicinskt intyg klass 2 ska synskärpan vara 6/12 (0,5) eller bättre för vardera ögat och
+                        synskärpan med båda
+
+                        ögonen ska vara 6/9 (0,7) eller bättre. Sökande med nedsatt syn på ett öga kan bedömas som
+                        lämplig i
+                        samråd med
+
+                        den certifikatutfärdande myndigheten, efter tillfredsställande oftalmologisk bedömning:
+
                     </p>
-            </section>
+                </section>
+            </div>
+            <div class="lankar_farg">
+                <section class="qna">
+                    <h2>Länkar</h2>
+                    <ul>
+                        <li> <a
+                                href="https://impro.usercontent.one/appid/oneComWsb/domain/flygdykdoktor.se/media/flygdykdoktor.se/onewebmedia/CCI20131103_00002.jpg">Medicinska
+                                giltighetstider enl EASA fr 2013</a> </li>
+                        <li> <a
+                                href="https://www.flygdykdoktor.se/L1788-1_medicinska_undersokningars_giltighetstid_for_flygledare.pdf">Certifikat
+                                giltighetstider för Flygledare</a></li>
+                        <li> <a href="https://flygdykdoktor.se/onewebmedia/temp7599855173911020428.pdf">Ansökningsblankett
+                                för medicinsk intyg</a></li>
+                        <li> <a href="https://flygdykdoktor.se/Optiker.pdf">Lista över Optiker som kan göra även
+                                tonometri dvs ögontryckmätning relevant för klass 1> 40 år samt flygledare.</a></li>
+                        <li> <a href="https://krfk.se/regler.htm">Nyttig länk om lagar / blanketter på KrfK klubb
+                                hemsida</a></li>
+                        <li> <a href="https://flygdykdoktor.se/onewebmedia/temp6537370626306076628.pdf">NY REGELVERK</a>
+                        </li>
+                        <li> <a href="">Matnyttiga flyglänkar med bla. medicinska krav för piloter såväl även
+                                fallskärmhoppare, Astronauter osv</a></li>
+                    </ul>
+                </section>
+            </div>
         </main>
 
         <footer>
             <p>Länk till sociala medier</p>
             <div class="social-links">
-              <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i class="fab fa-facebook">Facebook</i> </a>
-              <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter / X</i></a>
-              <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
-              <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+                <a href="https://www.facebook.com/YOUR_PAGE" target="_blank"><i class="fab fa-facebook">Facebook</i>
+                </a>
+                <a href="https://www.twitter.com/YOUR_PROFILE" target="_blank"><i class="fab fa-twitter">Twitter /
+                        X</i></a>
+                <a href="https://www.instagram.com/YOUR_PROFILE" target="_blank"><i>Instagram</i></a>
+                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank"><i
+                        class="fab fa-linkedin">LinkedIn</i></a>
             </div>
             <p>Copyright © All Rights Reserved</p>
-          </footer>
+        </footer>
     </div>
 
     <script src="js/javascript.js"></script>
